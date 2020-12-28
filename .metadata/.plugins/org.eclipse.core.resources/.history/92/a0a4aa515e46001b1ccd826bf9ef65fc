@@ -1,0 +1,30 @@
+package model;
+
+public class Gerente extends Funcionario{
+	private String nome;
+	private String cpf;
+	private double salario;
+	private int senha;
+	
+	public Gerente(String nome, String cpf, double salario) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.salario = salario;
+	}
+	public Gerente() {
+	};
+	
+	public boolean autentica(int senha) {
+		if(this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public double getBonificacao() {
+		return this.salario;
+	}
+	
+	
+}

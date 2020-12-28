@@ -1,0 +1,41 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		boolean valida = false;
+		String nome, sexo;
+		int idade;
+		double salario;
+
+		do {
+			System.out.println("Entre com o nome");
+			nome = scan.next();
+			if(nome.length() > 3) {
+				valida = true;
+				System.out.println("Nome válido!");
+			}else {
+				System.out.println("Nome inválido!");
+			}
+			
+			
+		}while(!valida);
+		
+		do {
+			System.out.println("Digite a sua idade!");
+			idade = scan.nextInt();
+			
+			if(idade >= 0 && 150 <= idade) {
+			valida = false;
+			System.out.println("Idade Aceita");
+				
+			}else {
+			System.out.println("Idade não aceita! Digite uma idade válida!");	
+			}
+		}while(!valida);
+		
+	}
+
+}

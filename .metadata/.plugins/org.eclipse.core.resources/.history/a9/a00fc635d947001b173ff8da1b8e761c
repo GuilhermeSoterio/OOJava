@@ -1,0 +1,14 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String nome = scan.next();
+		int idade = scan.nextInt();
+		double salario = scan.nextDouble();
+		char sexo = scan.next();
+	}
+
+}

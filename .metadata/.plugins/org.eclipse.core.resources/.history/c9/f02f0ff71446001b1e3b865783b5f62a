@@ -1,0 +1,9 @@
+package herança;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Funcionario nico = new Funcionario();
+	}
+
+}

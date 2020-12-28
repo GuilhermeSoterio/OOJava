@@ -1,0 +1,76 @@
+package while2;
+/*Faça um programa que valide o nome, idade, sexo e estado civil e salario*/
+import java.util.Scanner;
+
+public class exercicio3_ValidaFormulario {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		boolean valida = false;
+		String nome, sexo, estadoCivil;
+		int idade;
+		double salario;
+
+		do {
+			System.out.println("Entre com o nome");
+			nome = scan.next();
+			if(nome.length() > 3) {
+				valida = true;
+				System.out.println("Nome válido!");
+			}else {
+				System.out.println("Nome inválido!");
+			}
+			
+			
+		}while(!valida);
+		
+		do {
+			System.out.println("Digite a sua idade!");
+			idade = scan.nextInt();
+			
+			if(idade >= 0 && idade <= 150) {
+			valida = true;
+			System.out.println("Idade Aceita");
+				
+			}else {
+			System.out.println("Idade não aceita! Digite uma idade válida!");	
+			}
+		}while(!valida);
+		valida = false;
+	
+			do {
+				System.out.println("Digite o seu sexo!");
+				sexo = scan.next();
+				if(sexo.equalsIgnoreCase("f")|| sexo.equalsIgnoreCase("m")){
+					valida = true;
+					System.out.println("Sexo correto!");
+				}else {
+					System.out.println("Digite um sexo válido!");
+				}
+			}while(!valida);
+		 valida = false;
+		 
+			do {
+				System.out.println("Digite o seu estado civil");
+				estadoCivil = scan.next();
+				if(estadoCivil.equalsIgnoreCase("s") || 
+						estadoCivil.equalsIgnoreCase("c") || 
+						  estadoCivil.equalsIgnoreCase("d")) {
+					valida = true;
+				}else {
+					System.out.println("Estado civil não aceito");
+				}
+				
+			}while(!valida);
+		  valida = false;
+			do {
+				System.out.println("Digite o seu salário");
+				salario = scan.nextDouble();
+				if(salario > 0) {
+					valida = true;
+					System.out.println("Salário válido");
+				}else {
+					System.out.println("Digite um salário maior que zero");
+				}
+			}while(!valida);
+	}
+}

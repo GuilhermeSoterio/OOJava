@@ -1,0 +1,49 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio5 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int populaA;
+		System.out.println("População da cidade B");
+		int populaB = scan.nextInt();
+		int cont = 0;
+		System.out.println("Taxa de crescimento da população A");
+		int taxaA = scan.nextInt();
+		System.out.println("Taxa de crescimento da população B");
+		int taxaB = scan.nextInt();
+		boolean valida = false;
+		boolean valida2 = false;
+		
+		do {
+			System.out.println("População da cidade A");
+			populaA = scan.nextInt();
+			if(!(populaA <= 0)){
+				valida= true;
+			}else {
+				System.out.println("Popualação tem que ser maior que zero");
+			}
+			
+			System.out.println("População da cidade B");
+			populaA = scan.nextInt();
+			if(!(populaB <= 0)){
+				valida2= true;
+			}else {
+				System.out.println("Popualação tem que ser maior que zero");
+			}
+			
+		}while(!valida && !valida2);
+		
+		while (populaA < populaB) {
+			populaA += (populaA/100) * taxaA;
+			populaB += (populaB/100) * taxaB;
+			cont++;
+		}
+		System.out.println("População A: " + populaA);
+		System.out.println("População B: " + populaB);
+		System.out.println("Quantidade de anos: " + cont);
+		
+	}
+
+}

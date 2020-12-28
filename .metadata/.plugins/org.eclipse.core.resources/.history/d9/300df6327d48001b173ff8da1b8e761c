@@ -1,0 +1,15 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio21_MediaTurma {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		int numTurmas = scan.nextInt();
+		
+		for (int i=1; i<=numTurmas; i++) {
+			
+			System.out.println("Entre com o número de alunos da turma" + i);
+		}
+	}
+}

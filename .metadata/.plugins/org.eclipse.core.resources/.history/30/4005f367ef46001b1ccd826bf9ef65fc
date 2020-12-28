@@ -1,0 +1,7 @@
+package model;
+
+public class TesteReferencia {
+	Funcionario funcionario = new Funcionario();
+	funcionario.setNome("Nicolas");
+	funcionario.setSalario(2600.00);
+}

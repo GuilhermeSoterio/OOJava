@@ -1,0 +1,22 @@
+package while2;
+/*Faça um programa que peça dois números, base e expoente, calcula e mostre o primeiro número elevado
+ * ao segundo número. Não utilize a função de potência da linguagem.
+ */
+import java.util.Scanner;
+
+public class exercicio13 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Entre com a base");
+		int base = scan.nextInt();
+		
+		System.out.println("Entre com a potência");
+		int potencia = scan.nextInt();
+		
+		int resultado = 0;
+		
+		for (int i = 0; i<potencia; i++) {
+			resultado *= base;
+		}
+	}
+}

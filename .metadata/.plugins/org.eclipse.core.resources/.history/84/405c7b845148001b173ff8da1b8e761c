@@ -1,0 +1,10 @@
+package while2;
+
+import java.util.Scanner;
+
+/*Faça um programa qye peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares.*/
+public class exercicio14 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+	}
+}

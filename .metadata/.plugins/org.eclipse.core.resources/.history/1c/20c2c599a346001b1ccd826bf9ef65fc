@@ -1,0 +1,9 @@
+package Logica;
+
+public class MenorMaiorSalario {
+	public static void main(String[] args) {
+		double salarios[] = new double[4];
+		
+	}
+
+}

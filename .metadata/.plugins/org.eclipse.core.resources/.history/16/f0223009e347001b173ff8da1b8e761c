@@ -1,0 +1,32 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio5 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("População da cidade A");
+		int populaA = scan.nextInt();
+		System.out.println("População da cidade B");
+		int populaB = scan.nextInt();
+		int cont = 0;
+		System.out.println("Taxa de crescimento da população A");
+		int taxaA = scan.nextInt();
+		System.out.println("Taxa de crescimento da população B");
+		int taxaB = scan.nextInt();
+		boolean valida = true;
+		do {
+			
+		}while(!valida);
+		while (populaA < populaB) {
+			populaA += (populaA/100) * taxaA;
+			populaB += (populaB/100) * taxaB;
+			cont++;
+		}
+		System.out.println("População A: " + populaA);
+		System.out.println("População B: " + populaB);
+		System.out.println("Quantidade de anos: " + cont);
+		
+	}
+
+}

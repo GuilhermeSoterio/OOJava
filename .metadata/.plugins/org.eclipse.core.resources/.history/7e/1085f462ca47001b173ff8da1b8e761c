@@ -1,0 +1,26 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio2 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		boolean valido = false;
+		
+		do {
+			System.out.println("Entre com um nome");
+			String nome = scan.next();
+			System.out.println("Entre com uma senha");
+			String senha = scan.next();
+			if(nome.equals(senha)) {
+				valido = true;
+				System.out.println("Nome e senha válidos");
+			}else {
+				System.out.println("Não aceitamos senha igual a do usuário");
+			}
+			
+		}while(!valido);
+		
+	}
+
+}

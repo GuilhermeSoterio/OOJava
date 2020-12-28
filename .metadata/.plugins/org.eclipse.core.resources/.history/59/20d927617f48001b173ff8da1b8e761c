@@ -1,0 +1,24 @@
+package while2;
+/*Faça um programa que calcule o valor total investido por um colecionador em sua coleção
+ * de CDs e o valor médio gasto em cada um deles. O usuário deverá informar a quantidade
+ de CDs e o valor para em cada um*/
+import java.util.Scanner;
+
+public class exercicio22 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Quantidade de CDS");
+		int cds = scan.nextInt();
+		int soma = 0;
+		for(int i =0; i<cds; i++) {
+			System.out.println("Valo do CD:");
+			int valor = scan.nextInt();
+			soma += valor;
+		}
+		
+		System.out.println("Soma de valores: " + soma);
+		int media = soma/cds;
+		System.out.println("Média dos CDs: " + media);
+	}
+}

@@ -1,0 +1,24 @@
+package model;
+
+public class TesteReferencia {
+	public static void main(String[] args) {
+		
+	Funcionario funcionario = new Funcionario();
+	funcionario.setNome("Nicolas");
+	funcionario.setSalario(2600.00);
+	
+	Gerente gerente = new Gerente();
+	gerente.setNome("Rodolfo");
+	gerente.setSalario(4600.00);
+	
+	EditorVideo editorVideo = new EditorVideo();
+	editorVideo.setNome("Rodolfo");
+	editorVideo.setSalario(3600.00);
+	
+	ControleBonificacao controle = new ControleBonificacao();
+	controle.registro(g1);
+	controle.registro(f);
+	controle.registro(ev);
+	
+	}
+}

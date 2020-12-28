@@ -1,0 +1,9 @@
+package model;
+
+public class MainFuncionario {
+	public static void main(String[] args) {
+		Funcionario funcionario = New Funcionario();
+		funcionario.setNome("Nico");
+	}
+
+}

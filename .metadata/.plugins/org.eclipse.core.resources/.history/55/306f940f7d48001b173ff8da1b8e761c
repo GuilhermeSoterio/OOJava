@@ -1,0 +1,9 @@
+package while2;
+
+import java.util.Scanner;
+
+public class exercicio21_MediaTurma {
+	public static void main(String[] args) {
+		Scanner scan = Scanner(System.in);
+	}
+}
